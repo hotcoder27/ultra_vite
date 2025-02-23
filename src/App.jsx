@@ -6,6 +6,7 @@ import Tutoring from './components/Tutoring';
 import HireInstructors from './components/HireInstructor';
 import Footer from './components/Footer';
 import Mission from './components/Mission';
+import Services from './components/Services';
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <Mission />
-      <Tutoring />
       <Stats />
+      <Services />
+      <Tutoring />
       <HireInstructors />
       <Footer />
     </main>
