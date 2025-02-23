@@ -35,7 +35,7 @@ export default function Tutoring() {
             ))}
           </dl>
           <div className="mt-10 flex justify-center">
-            <button className="bg-green-500 text-white px-10 py-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
+            <button className="bg-green-500 text-white px-8 py-5 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
               Book a Trial Class
             </button>
           </div>

@@ -1,5 +1,6 @@
-import { ArrowRight, Plane, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { surelearnImg, learn, eexam, sureImg, winImg, workImg, meetImg } from "../utils";
+import { links } from "../constants";
 
 
 const Hero = () => {
@@ -19,39 +20,21 @@ const Hero = () => {
             </p>
 
             <div className="flex items-center">
-              <a 
-                href=""
-                className='inline-flex h-11 items-center justify-center border-r-0 text-xs rounded-l-lg shadow-sm px-3 font-medium text-gray-500 hover:bg-green-600 hover:text-white border-2 border-green-500 transition-all'
-              >
-                Online Tutoring
-              </a>
-              <a 
-                href=""
-                className='inline-flex h-11 items-center justify-center shadow-sm px-3 text-xs font-medium text-gray-500 hover:bg-green-600 hover:text-white border-2 border-green-500 transition-all'
-              >
-                Test Prep
-              </a>
-              <a 
-                href=""
-                className='inline-flex h-11 border-l-0 items-center justify-center shadow-sm px-3 text-xs font-medium text-gray-500 hover:bg-green-600 hover:text-white border-2 border-green-500 transition-all'
-              >
-                Business & Career
-              </a>
-              <a 
-                href=""
-                className='inline-flex h-11 border-l-0 items-center justify-center shadow-sm px-3 text-xs font-medium text-gray-500 hover:bg-green-600 hover:text-white border-2 border-green-500 transition-all'
-              >
-                Study Abroad
-              </a>
-              <a 
-                href=""
-                className='inline-flex h-11 border-l-0 items-center justify-center shadow-sm px-3 text-xs font-medium text-gray-500 hover:bg-green-600 hover:text-white border-2 border-green-500 rounded-r-lg transition-all'
-              >
-                Travel Abroad
-              </a>
-              
+              {links.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className={`inline-flex h-11 items-center justify-center shadow-sm  p-4 text-xs font-medium text-gray-500 hover:bg-green-600 hover:text-white border-2 border-green-500 transition-all ${
+                    index === 0 ? 'rounded-l-lg border-r-2' :
+                    index === links.length - 1 ? 'rounded-r-lg border-l-0' :
+                    'border-l-0'
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
             </div>
-
+            
           </div>
 
           {/* Image Grid */}

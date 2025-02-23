@@ -1,5 +1,6 @@
-import { XIcon, Music2Icon } from "lucide-react";
 import { AcademicCapIcon, BookOpenIcon, BriefcaseIcon, BuildingLibraryIcon } from '@heroicons/react/24/outline';
+import { Facebook, Instagram, Youtube, Linkedin } from "react-feather";
+import { learntyImg, learnbkImg, learnxyImg, learn } from '../utils';
 
 export const navLinks = [
     {
@@ -20,11 +21,41 @@ export const navLinks = [
     }
   ];
 
+export const missions = [
+  {
+    title: "Online Tutoring and Test Prep",
+    description: "Offering foundational and advanced tutoring across all educational levels, including preparation for standardized tests and graduate-level exams.",
+    image: learnbkImg,
+  },
+  {
+    title: "Business & Career",
+    description: "Providing talent recruitment, corporate training, consulting services, and customized software solutions to enhance business growth and efficiency.",
+    image: learnxyImg,
+  },
+  {
+    title: "Travel Abroad",
+    description: "Assisting with USA permanent resident services, visa applications, travel planning, and accommodation arrangements for international travel.",
+    image: learn,
+  },
+  {
+    title: "Study Abroad",
+    description: "Supporting students with overseas admission applications, visa application support, and guidance through programs like the Right Through Program (RTP).",
+    image: learntyImg,
+  },
+];
+
+export const links = [
+  { label: 'Online Tutoring & Test Prep', href: '/tutoring' },
+  { label: 'Business & Career', href: '/business-career' },
+  { label: 'Study Abroad', href: '/study-abroad' },
+  { label: 'Travel Abroad', href: '/travel-abroad' },
+];
+
 export const socialLinks = [
-    { name: "Facebook", icon: XIcon, href: "#" },
-    { name: "Twitter", icon: XIcon, href: "#" },
-    { name: "TikTok", icon: Music2Icon, href: "#" },
-    { name: "Instagram", icon: XIcon, href: "#" },
+    { name: "Facebook", icon: Facebook, href: "#" },
+    { name: "Linkedin", icon: Linkedin, href: "#" },
+    { name: "Youtube", icon: Youtube, href: "#" },
+    { name: "Instagram", icon: Instagram, href: "#" },
   ];
 
 export const features = [

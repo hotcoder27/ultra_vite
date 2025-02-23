@@ -13,6 +13,7 @@ import meet from "/assets/images/meet.jpg";
 import learnbk from "/assets/images/learnbk.jpg";
 import learnxy from "/assets/images/learnxy.jpg";
 import learnty from "/assets/images/learnty.jpg";
+import ultra from "/assets/images/ultra.jpg";
 
 export const logo = logo_1
 export const logo2 = logo_2
@@ -29,3 +30,4 @@ export const meetImg = meet
 export const learnbkImg = learnbk
 export const learnxyImg = learnxy
 export const learntyImg = learnty
+export const ultraImg = ultra
