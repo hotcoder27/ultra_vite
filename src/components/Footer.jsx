@@ -1,19 +1,6 @@
-import { XIcon, Music2Icon } from "lucide-react";
 import { logo } from '../utils';
-
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "Products", href: "/products" },
-  { name: "Contact", href: "/contact" },
-];
-
-const socialLinks = [
-  { name: "Facebook", icon: XIcon, href: "#" },
-  { name: "Twitter", icon: XIcon, href: "#" },
-  { name: "TikTok", icon: Music2Icon, href: "#" },
-  { name: "Instagram", icon: XIcon, href: "#" },
-];
+import { navLinks } from "../constants";
+import { socialLinks } from '../constants';
 
 export default function Footer() {
   return (
@@ -31,9 +18,9 @@ export default function Footer() {
 
           {/* Navigation */}
           <nav className="flex gap-6">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm text-gray-600 hover:text-green-500 transition-all">
-                {item.name}
+            {navLinks.map((item) => (
+              <a key={item.label} href={item.href} className="text-sm cursor-pointer text-gray-600 hover:text-green-500 transition-all">
+                {item.label}
               </a>
             ))}
           </nav>

@@ -1,3 +1,6 @@
+import { XIcon, Music2Icon } from "lucide-react";
+import { AcademicCapIcon, BookOpenIcon, BriefcaseIcon, BuildingLibraryIcon } from '@heroicons/react/24/outline';
+
 export const navLinks = [
     {
       label: 'Home',
@@ -16,6 +19,36 @@ export const navLinks = [
       url: '/contact'
     }
   ];
+
+export const socialLinks = [
+    { name: "Facebook", icon: XIcon, href: "#" },
+    { name: "Twitter", icon: XIcon, href: "#" },
+    { name: "TikTok", icon: Music2Icon, href: "#" },
+    { name: "Instagram", icon: XIcon, href: "#" },
+  ];
+
+export const features = [
+  {
+    name: 'Basic (Grade 1-JSS 3)',
+    description: 'Foundational tutoring in core subjects to build strong academic skills.',
+    icon: BookOpenIcon,
+  },
+  {
+    name: 'Senior Secondary (SS1-SS3)',
+    description: 'Advanced tutoring aligned with national and international curricula.',
+    icon: BuildingLibraryIcon,
+  },
+  {
+    name: 'K-12 (SAT, WAEC/NECO, UTME, IELTS)',
+    description: 'Comprehensive preparation for standardized tests and national exams.',
+    icon: AcademicCapIcon,
+  },
+  {
+    name: 'Graduate & Beyond (GRE, GMAT, TOEFL, IELTS)',
+    description: 'Specialized coaching for graduate-level exams to equip students for international opportunities.',
+    icon: BriefcaseIcon,
+  },
+];
 
 export const ePrepLinks = [ 'Basic Classes', 'Grade K-12', 'Graduate & Beyond' ]
 

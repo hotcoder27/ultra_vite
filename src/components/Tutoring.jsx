@@ -1,28 +1,5 @@
-import { AcademicCapIcon, BookOpenIcon, BriefcaseIcon, BuildingLibraryIcon } from '@heroicons/react/24/outline';
 import { learnxyImg } from '../utils';
-
-const features = [
-  {
-    name: 'Basic (Grade 1-JSS 3)',
-    description: 'Foundational tutoring in core subjects to build strong academic skills.',
-    icon: BookOpenIcon,
-  },
-  {
-    name: 'Senior Secondary (SS1-SS3)',
-    description: 'Advanced tutoring aligned with national and international curricula.',
-    icon: BuildingLibraryIcon,
-  },
-  {
-    name: 'K-12 (SAT, WAEC/NECO, UTME, IELTS)',
-    description: 'Comprehensive preparation for standardized tests and national exams.',
-    icon: AcademicCapIcon,
-  },
-  {
-    name: 'Graduate & Beyond (GRE, GMAT, TOEFL, IELTS)',
-    description: 'Specialized coaching for graduate-level exams to equip students for international opportunities.',
-    icon: BriefcaseIcon,
-  },
-];
+import { features } from '../constants';
 
 export default function Tutoring() {
   return (
