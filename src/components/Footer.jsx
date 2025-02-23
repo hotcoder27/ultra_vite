@@ -12,7 +12,7 @@ const socialLinks = [
   { name: "Facebook", icon: XIcon, href: "#" },
   { name: "Twitter", icon: XIcon, href: "#" },
   { name: "TikTok", icon: Music2Icon, href: "#" },
-  { name: "Instagram", icon: Music2Icon, href: "#" },
+  { name: "Instagram", icon: XIcon, href: "#" },
 ];
 
 export default function Footer() {
