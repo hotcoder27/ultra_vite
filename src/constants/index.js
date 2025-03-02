@@ -9,7 +9,7 @@ export const navLinks = [
     },
     {
       label: 'Services',
-      url: '/services'
+      url: '#services'
     },
     {
       label: 'Products',
@@ -17,7 +17,7 @@ export const navLinks = [
     },
     {
       label: 'Contact',
-      url: '/contact'
+      url: '#contact'
     }
   ];
 

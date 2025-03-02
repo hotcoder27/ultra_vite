@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Mission from './components/Mission';
 import Services from './components/Services';
 import Testimonial from './components/Testimonial';
+import ContactForm from './components/Contact';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Tutoring />
       <HireInstructors />
       <Testimonial />
+      <ContactForm />
       <Footer />
     </main>
   )

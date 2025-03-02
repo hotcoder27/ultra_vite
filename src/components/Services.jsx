@@ -71,7 +71,7 @@ export default function Services() {
   };
 
   return (
-    <div className="bg-green-500 min-h-screen text-white p-6 md:p-10 flex flex-col md:flex-row items-start">
+    <div className="bg-green-500 min-h-screen text-white p-6 md:p-10 flex flex-col md:flex-row items-start" id="services">
       {/* Left Section (Text) */}
       <div className="md:w-1/3 w-full md:pr-10">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white">Personalized Services for You</h2>

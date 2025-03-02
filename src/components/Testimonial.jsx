@@ -17,19 +17,19 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-green-100 to-green-50 p-8 py-16 rounded-2xl shadow-lg relative">
+    <section className="bg-gradient-to-r from-green-500 to-green-400 p-8 py-16 rounded-2xl shadow-lg relative">
       <div className="max-w-3xl mx-auto text-center">
-        <div className="text-green-500 text-6xl mb-6">
+        <div className="text-white text-6xl mb-6">
           <Quote />
         </div>
-        <blockquote className="text-xl md:text-2xl font-semibold text-gray-800 mb-8">
+        <blockquote className="text-xl md:text-2xl font-semibold text-white mb-8">
           <p>{testimonial.content}</p>
         </blockquote>
         <div className="flex items-center justify-center mb-6">
-          <testimonial.avatarUrl aria-hidden="true" className="size-12 text-green-500" />
+          <testimonial.avatarUrl aria-hidden="true" className="size-12 text-gray-50" />
           <div className="ml-4 text-left">
-            <p className="font-semibold text-gray-900">{testimonial.author}</p>
-            <p className="text-gray-600">{testimonial.role}</p>
+            <p className="font-semibold text-gray-50">{testimonial.author}</p>
+            <p className="text-gray-50">{testimonial.role}</p>
           </div>
         </div>
         <div className="flex justify-center space-x-4">
