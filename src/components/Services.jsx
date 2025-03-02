@@ -11,6 +11,7 @@ const services = [
     image: learntyImg,
     url: "#"
   },
+
   {
     id: "online-tutoring-senior",
     title: "Senior Secondary (SS1-SS3)",
@@ -18,6 +19,7 @@ const services = [
     image: learnxyImg,
     url: "#"
   },
+
   {
     id: "k12-prep",
     title: "K-12 (SAT, WAEC/NECO, UTME, IELTS)",
@@ -25,6 +27,7 @@ const services = [
     image: learn,
     url: "#"
   },
+
   {
     id: "graduate-prep",
     title: "Graduate & Beyond (GRE, GMAT, TOEFL, IELTS)",
@@ -32,6 +35,7 @@ const services = [
     image: learntyImg,
     url: "#"
   },
+
   {
     id: "business-training",
     title: "Business & Enterprise Training & Consulting",
@@ -39,6 +43,7 @@ const services = [
     image: learnxyImg,
     url: "#"
   },
+
   {
     id: "travel-abroad",
     title: "Travel Abroad Consulting",
@@ -46,6 +51,7 @@ const services = [
     image: learn,
     url: "#"
   },
+
   {
     id: "study-abroad",
     title: "Study Abroad Consulting",
@@ -53,6 +59,7 @@ const services = [
     image: learntyImg,
     url: "#"
   }
+
 ];
 
 export default function Services() {
@@ -83,6 +90,7 @@ export default function Services() {
                   <Plus className="w-5 h-5 md:hidden" />
                 )}
               </div>
+
               {/* Mobile Description & Image */}
               <AnimatePresence>
                 {expandedService === service.id && (
@@ -102,6 +110,7 @@ export default function Services() {
           ))}
         </div>
       </div>
+
       {/* Right Section (Desktop Image + Description) */}
       <div className="hidden md:flex md:w-2/3 w-full flex-col md:flex-row items-center md:items-start md:justify-start mt-6 md:mt-0 bg-white p-6 rounded-lg shadow-lg">
         <motion.img
@@ -113,10 +122,12 @@ export default function Services() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         />
+
         <div className="md:ml-8 mt-4 md:mt-0 max-w-lg text-green-500 text-lg leading-relaxed">
           {selectedService.description}
           <a href={selectedService.url} className="mt-4 block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 text-center">Learn More</a>
         </div>
+
       </div>
     </div>
   );

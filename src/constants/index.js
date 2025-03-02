@@ -1,4 +1,4 @@
-import { AcademicCapIcon, BookOpenIcon, BriefcaseIcon, BuildingLibraryIcon } from '@heroicons/react/24/outline';
+import { AcademicCapIcon, BookOpenIcon, BriefcaseIcon, BuildingLibraryIcon, UserIcon } from '@heroicons/react/24/outline';
 import { Facebook, Instagram, Youtube, Linkedin } from "react-feather";
 import { learntyImg, learnbkImg, learnxyImg, learn } from '../utils';
 
@@ -94,6 +94,44 @@ export const footerLinks = [
     "Terms of Service",
     "FAQs",
     "Contact Us",
+]
+
+export const testimonials = [
+  {
+    id: 1,
+    content: "Ultra Ade Tech's online tutoring for my child in JSS 3 was phenomenal. Their foundational approach significantly improved his math skills. We saw a noticeable difference in his confidence and grades.",
+    author: "Aisha Abubakar",
+    role: "Parent",
+    avatarUrl: UserIcon,
+  },
+  {
+    id: 2,
+    content: "I was overwhelmed with the IELTS preparation until I found Ultra Ade Tech. Their comprehensive program and personalized coaching helped me achieve my target score. I'm now headed to study abroad!",
+    author: "Fatima Bello",
+    role: "Prospective Student",
+    avatarUrl: UserIcon,
+  },
+  {
+    id: 3,
+    content: "The EB2 NIW consultation from Ultra Ade Tech was exceptional. Their expertise and guidance made the complex process of obtaining a USA permanent resident visa much smoother. I am very grateful for their support.",
+    author: "Ngozi Okafor",
+    role: "Immigrant Applicant",
+    avatarUrl: UserIcon,
+  },
+  {
+    id: 4,
+    content: "Ultra Ade Tech's development of a custom web solution for our business streamlined our operations and improved efficiency. Their team was professional and responsive throughout the entire process.",
+    author: "Olamide Ogunleye",
+    role: "Business Owner",
+    avatarUrl: UserIcon,
+  },
+  {
+    id: 5,
+    content: "The RTP program for study abroad was a game changer! All my applications and Visa processing was handled seamlessly. I am now studying in my dream university.",
+    author: "Kelechi Nwosu",
+    role: "Student",
+    avatarUrl: UserIcon,
+  },
 ]
 
 export const stats = [

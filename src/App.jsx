@@ -7,6 +7,7 @@ import HireInstructors from './components/HireInstructor';
 import Footer from './components/Footer';
 import Mission from './components/Mission';
 import Services from './components/Services';
+import Testimonial from './components/Testimonial';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Services />
       <Tutoring />
       <HireInstructors />
+      <Testimonial />
       <Footer />
     </main>
   )
