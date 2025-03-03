@@ -45,7 +45,7 @@ export const missions = [
 ];
 
 export const links = [
-  { label: 'Online Tutoring & Test Prep', href: '/tutoring' },
+  { label: 'Online Tutoring & Test Prep', href: '/etutor' },
   { label: 'Business & Career', href: '/business-career' },
   { label: 'Study Abroad', href: '/study-abroad' },
   { label: 'Travel Abroad', href: '/travel-abroad' },

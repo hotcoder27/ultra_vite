@@ -1,24 +1,24 @@
 import { learnxyImg } from '../utils';
 import { features } from '../constants';
 
-export default function Tutoring() {
+export default function Etutor() {
   return (
     <div className="bg-white mt-16 py-6 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-gray-900">Online Tutoring & Test Preparation</h2>
-          <p className="mt-2 text-4xl max-sm:text-2xl font-semibold tracking-tight text-pretty text-green-500 sm:text-5xl lg:text-balance">
+          <p className="mt-1 text-4xl max-sm:text-2xl font-semibold tracking-tight text-pretty text-green-500 sm:text-5xl lg:text-balance">
             Every Learner, Every Stage
+          </p>
+          <p className="mt-2 text-lg/8 text-gray-600">
+            Providing personalized tutoring and test preparation for all educational levels.
           </p>
           <img
             src={learnxyImg}
             alt="Learning Illustration"
-            className="mx-auto mt-6 rounded-lg shadow-lg"
+            className="mx-auto mt-2 rounded-lg shadow-lg"
             style={{ maxWidth: '100%', height: 'auto' }}
           />
-          <p className="mt-6 text-lg/8 text-gray-600">
-            Providing personalized tutoring and test preparation for all educational levels.
-          </p>
+          
         </div>
         <div className="mx-auto mt-6 max-w-2xl sm:mt-14 lg:mt-18 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">

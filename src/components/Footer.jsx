@@ -7,6 +7,7 @@ export default function Footer() {
     <footer className="border-t border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-6 py-8 sm:flex-row">
+
           {/* Logo */}
           <div className="order-first sm:order-none">
             <img

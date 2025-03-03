@@ -63,8 +63,6 @@ const Hero = () => {
               <Send size={60} color="white" />
             </div>
           </div>
-
-
         </div>
 
       </div>

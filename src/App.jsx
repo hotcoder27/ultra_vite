@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Tutoring from './components/Tutoring';
@@ -9,22 +9,39 @@ import Mission from './components/Mission';
 import Services from './components/Services';
 import Testimonial from './components/Testimonial';
 import ContactForm from './components/Contact';
+import Etutor from './components/Etutor';
 
 const App = () => {
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Mission />
-      <Stats />
-      <Services />
-      <Tutoring />
-      <HireInstructors />
-      <Testimonial />
-      <ContactForm />
-      <Footer />
-    </main>
-  )
-}
+    <Router>
+      <main>
+        <Navbar />
+        <Routes>
 
-export default App
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Mission />
+              <Stats />
+              <Services />
+              <Tutoring />
+              <HireInstructors />
+              <Testimonial />
+              <ContactForm />
+            </>
+          } />
+
+          <Route path="/etutor" element={<Etutor />} />
+          <Route path="/business-career" element={<Tutoring />} />
+          <Route path="/study-abroad" element={<Tutoring />} />
+          <Route path="/travel-abroad" element={<Tutoring />} />
+
+
+        </Routes>
+        <Footer />
+      </main>
+    </Router>
+  );
+};
+
+export default App;
