@@ -3,7 +3,7 @@ import { features } from '../constants';
 
 export default function Tutoring() {
   return (
-    <div className="bg-white mt-16 py-6 sm:py-12">
+    <div className="bg-white py-6 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base/7 font-semibold text-gray-900">Online Tutoring & Test Preparation</h2>
@@ -36,7 +36,7 @@ export default function Tutoring() {
           </dl>
           <div className="mt-10 flex justify-center">
             <button className="bg-green-500 text-white px-8 py-5 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
-              Book a Trial Class
+              Get Started
             </button>
           </div>
         </div>

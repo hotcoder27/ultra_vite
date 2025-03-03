@@ -1,46 +1,47 @@
 import { learnxyImg } from '../utils';
-import { features } from '../constants';
+import Courses from './Courses';
+import WhyChooseUs from './WhyChooseUs';
+import HireTutors from './HireTutor';
+import MeetOurTeam from './MeetOurTeam';
 
 export default function Etutor() {
   return (
-    <div className="bg-white mt-16 py-6 sm:py-12">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <p className="mt-1 text-4xl max-sm:text-2xl font-semibold tracking-tight text-pretty text-green-500 sm:text-5xl lg:text-balance">
-            Every Learner, Every Stage
-          </p>
-          <p className="mt-2 text-lg/8 text-gray-600">
-            Providing personalized tutoring and test preparation for all educational levels.
-          </p>
-          <img
-            src={learnxyImg}
-            alt="Learning Illustration"
-            className="mx-auto mt-2 rounded-lg shadow-lg"
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
-          
-        </div>
-        <div className="mx-auto mt-6 max-w-2xl sm:mt-14 lg:mt-18 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base/7 font-semibold text-gray-900">
-                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-green-500">
-                    <feature.icon aria-hidden="true" className="size-6 text-white" />
-                  </div>
-                  {feature.name}
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
-          <div className="mt-10 flex justify-center">
-            <button className="bg-green-500 text-white px-8 py-5 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
-              Book a Trial Class
-            </button>
-          </div>
+    <section>
+      <div className="bg-green-500 text-white py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            {/* Text Section */}
+            <div className="lg:w-1/2 text-center lg:text-left">
+            <p className="text-4xl font-semibold sm:text-5xl mt-3 pt-12 lg:text-6xl text-pretty">Every Learner. Every Stage.</p>
+            <p className="mt-4 text-lg text-white">
+                Our tailored tutoring services cater to students at every level:
+            </p>
+            <ul className="mt-4 space-y-3 text-lg text-white">
+                <li><span className="text-white font-semibold">Basic (Grade 1 - JSS 3):</span> Foundational tutoring in core subjects such as Mathematics, English, and Science to build strong academic skills.</li>
+                <li><span className="text-white font-semibold">Senior Secondary (SS1 - SS3):</span> Advanced tutoring in subjects aligned with national and international curricula.</li>
+                <li><span className="text-white font-semibold">K-12 Exams (SAT, WAEC/NECO, UTME, IELTS):</span> Comprehensive preparation for standardized tests and national exams.</li>
+                <li><span className="text-white font-semibold">Graduate & Beyond (GRE, GMAT, TOEFL, IELTS):</span> Specialized coaching for graduate-level exams, equipping students for international academic opportunities.</li>
+            </ul>
+            <div className="mt-6">
+                <button className="bg-white text-green-500 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-50 transition-colors cursor-pointer">
+                Book A Trial Class
+                </button>
+            </div>
+            </div>
+            
+            {/* Image Section */}
+            <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
+            <img
+                src={learnxyImg}
+                alt="Students studying together"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+            />
+            </div>
         </div>
       </div>
-    </div>
+      <Courses />
+      <WhyChooseUs />
+      <HireTutors />
+      <MeetOurTeam />
+    </section>
   );
 }
