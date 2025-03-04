@@ -23,16 +23,6 @@ export const navLinks = [
 
 export const missions = [
   {
-    title: "Online Tutoring and Test Prep",
-    description: "Offering foundational and advanced tutoring across all educational levels, including preparation for standardized tests and graduate-level exams.",
-    image: learnbkImg,
-  },
-  {
-    title: "Business & Career",
-    description: "Providing talent recruitment, corporate training, consulting services, and customized software solutions to enhance business growth and efficiency.",
-    image: learnxyImg,
-  },
-  {
     title: "Travel Abroad",
     description: "Assisting with USA permanent resident services, visa applications, travel planning, and accommodation arrangements for international travel.",
     image: learn,
@@ -42,13 +32,23 @@ export const missions = [
     description: "Supporting students with overseas admission applications, visa application support, and guidance through programs like the Right Through Program (RTP).",
     image: learntyImg,
   },
+  {
+    title: "Online Tutoring and Test Prep",
+    description: "Offering foundational and advanced tutoring across all educational levels, including preparation for standardized tests and graduate-level exams.",
+    image: learnbkImg,
+  },
+  {
+    title: "Business & Career",
+    description: "Providing talent recruitment, corporate training, consulting services, and customized software solutions to enhance business growth and efficiency.",
+    image: learnxyImg,
+  },
 ];
 
 export const links = [
-  { label: 'Online Tutoring & Test Prep', href: '/etutor' },
-  { label: 'Business & Career', href: '/business-career' },
   { label: 'Study Abroad', href: '/study-abroad' },
   { label: 'Travel Abroad', href: '/travel-abroad' },
+  { label: 'Online Tutoring & Test Prep', href: '/etutor' },
+  { label: 'Business & Career', href: '/business-career' },
 ];
 
 export const socialLinks = [
