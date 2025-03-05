@@ -30,6 +30,7 @@ export default function Footer() {
         <div className="border-t border-gray-200" />
 
         <div className="flex flex-col-reverse gap-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+          
           {/* Copyright */}
           <p className="text-sm text-gray-600">© Ultra Ade Tech {new Date().getFullYear()}</p>
 
