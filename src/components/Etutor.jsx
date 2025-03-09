@@ -1,4 +1,4 @@
-import { learnxyImg } from '../utils';
+import { studentImg } from '../utils';
 import Courses from './Courses';
 import WhyChooseUs from './WhyChooseUs';
 import HireTutors from './HireTutor';
@@ -7,37 +7,35 @@ import MeetOurTeam from './MeetOurTeam';
 export default function Etutor() {
   return (
     <section>
-      <div className="bg-green-500 text-white py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center">
-            {/* Text Section */}
-            <div className="lg:w-1/2 text-center lg:text-left">
-            <p className="text-4xl font-semibold sm:text-5xl mt-3 pt-12 lg:text-6xl text-pretty">Every Learner. Every Stage.</p>
-            <p className="mt-4 text-lg text-white">
-                Our tailored tutoring services cater to students at every level:
-            </p>
-            <ul className="mt-4 space-y-3 text-lg text-white">
-                <li><span className="text-white font-semibold">Basic (Grade 1 - JSS 3):</span> Foundational tutoring in core subjects such as Mathematics, English, and Science to build strong academic skills.</li>
-                <li><span className="text-white font-semibold">Senior Secondary (SS1 - SS3):</span> Advanced tutoring in subjects aligned with national and international curricula.</li>
-                <li><span className="text-white font-semibold">K-12 Exams (SAT, WAEC/NECO, UTME, IELTS):</span> Comprehensive preparation for standardized tests and national exams.</li>
-                <li><span className="text-white font-semibold">Graduate & Beyond (GRE, GMAT, TOEFL, IELTS):</span> Specialized coaching for graduate-level exams, equipping students for international academic opportunities.</li>
-            </ul>
-            <div className="mt-6">
-                <button className="bg-white text-green-500 px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-50 transition-colors cursor-pointer">
-                Book A Trial Class
-                </button>
-            </div>
-            </div>
-            
-            {/* Image Section */}
-            <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
-            <img
-                src={learnxyImg}
-                alt="Students studying together"
-                className="rounded-lg shadow-lg max-w-full h-auto"
-            />
-            </div>
+      <div className="bg-white py-6 mt-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+        
+        {/* Text Section */}
+        <div className="lg:w-1/2 text-center lg:text-left space-y-6">
+          <h2 className="text-5xl font-bold leading-tight text-green-500">
+            Every Learner. Every Stage.
+          </h2>
+          <p className="text-lg text-gray-800 font-medium">
+            Expert tutoring for all academic levels:
+          </p>
+          <ul className="mt-4 space-y-3 text-lg text-gray-700">
+            <li><span className="font-semibold">Basic (Grade 1 - JSS 3):</span> Strong foundation in core subjects.</li>
+            <li><span className="font-semibold">Senior Secondary (SS1 - SS3):</span> Advanced subject coaching.</li>
+            <li><span className="font-semibold">K-12 & Exams:</span> SAT, WAEC, UTME, IELTS prep.</li>
+            <li><span className="font-semibold">Graduate & Beyond:</span> GRE, GMAT, TOEFL coaching.</li>
+          </ul>
+        </div>
+        
+        {/* Image Section */}
+        <div className="lg:w-1/2 flex justify-end">
+          <img
+            src={studentImg}
+            alt="Student studying"
+            className="rounded-2xl shadow-xl max-w-full h-auto object-cover"
+          />
         </div>
       </div>
+    </div>
       <Courses />
       <WhyChooseUs />
       <HireTutors />

@@ -30,6 +30,7 @@ export default function MeetOurTeam() {
             Meet Our Team
         </button>
       </a>
+      
     </section>
   );
 }

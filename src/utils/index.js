@@ -14,6 +14,12 @@ import learnbk from "/assets/images/learnbk.jpg";
 import learnxy from "/assets/images/learnxy.jpg";
 import learnty from "/assets/images/learnty.jpg";
 import ultra from "/assets/images/ultra.jpg";
+import student from "/assets/images/std.jpg";
+import studentB from "/assets/images/std2.png";
+import stab from "/assets/images/stab.jpg";
+import stablib from "/assets/images/stablib.jpg";
+import livestab from "/assets/images/livestab.jpg";
+
 
 export const logo = logo_1
 export const logo2 = logo_2
@@ -31,3 +37,8 @@ export const learnbkImg = learnbk
 export const learnxyImg = learnxy
 export const learntyImg = learnty
 export const ultraImg = ultra
+export const studentImg = student
+export const studentBImg = studentB
+export const stabImg = stab
+export const stablibImg = stablib
+export const livestabImg = livestab

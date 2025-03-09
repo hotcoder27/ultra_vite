@@ -34,9 +34,6 @@ export default function WhyChooseUs() {
         <h2 className="text-3xl font-bold text-green-500">
           Why Choose Us?
         </h2>
-        <p className="mt-4 text-gray-600">
-          Our proven methods and expert strategies empower students to achieve academic excellence and unlock their full potential.
-        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-12">
           {methodsAndStrategies.map((item, index) => (
