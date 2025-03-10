@@ -1,4 +1,4 @@
-import { learnxyImg } from '../utils';
+import { learnxyImg, studentBImg } from '../utils';
 
 export default function HireTutors() {
   return (
@@ -6,7 +6,7 @@ export default function HireTutors() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-50" 
-        style={{ backgroundImage: `url(${learnxyImg})` }} 
+        style={{ backgroundImage: `url(${studentBImg})` }} 
       ></div>
 
       {/* Content */}

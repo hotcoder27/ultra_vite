@@ -19,6 +19,7 @@ import studentB from "/assets/images/std2.png";
 import stab from "/assets/images/stab.jpg";
 import stablib from "/assets/images/stablib.jpg";
 import livestab from "/assets/images/livestab.jpg";
+import inter from "/assets/images/inter.jpg";
 
 
 export const logo = logo_1
@@ -42,3 +43,4 @@ export const studentBImg = studentB
 export const stabImg = stab
 export const stablibImg = stablib
 export const livestabImg = livestab
+export const interImg = inter

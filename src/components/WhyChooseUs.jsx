@@ -1,4 +1,5 @@
 import { AcademicCapIcon, AdjustmentsHorizontalIcon, ChartBarIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { learnxyImg } from '../utils';
 
 export default function WhyChooseUs() {
   const methodsAndStrategies = [
@@ -31,9 +32,16 @@ export default function WhyChooseUs() {
   return (
     <section className="bg-white py-8 mt-4 rounded-lg shadow-md border-y-2 border-lime-100">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-green-500">
+        <h2 className="text-3xl font-bold text-green-500 mb-8">
           Why Choose Us?
         </h2>
+
+        <img
+          src={learnxyImg}
+          alt="Learning Illustration"
+          className="mx-auto mt-6 rounded-lg shadow-lg"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-12">
           {methodsAndStrategies.map((item, index) => (
