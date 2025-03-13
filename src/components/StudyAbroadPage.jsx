@@ -1,5 +1,7 @@
 import { stablibImg } from "../utils";
 import ServicesPage from "./StudyAbroadDetails";
+import ScholarshipFinder from "./ScholarshipFinder";
+import CGPACalculator from "./CGPACalculato";
 
 const StudyAbroadPage = () => {
   return (
@@ -25,6 +27,7 @@ const StudyAbroadPage = () => {
       <div className="bg-white py-4">
         <ServicesPage />
       </div>
+      <ScholarshipFinder />
     </section>
   );
 };
