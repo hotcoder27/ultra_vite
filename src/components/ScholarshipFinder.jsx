@@ -4,25 +4,26 @@ const SchoolFinder = () => {
   return (
     <div className="bg-white flex flex-col items-center justify-center px-6 py-16">
       <div className="text-center max-w-2xl">
-        <h2 className="text-4xl font-bold text-green-500">Find Scholarships That Fit You</h2>
+        <h2 className="text-4xl font-bold text-green-500">Find Scholarships & Financial Aids</h2>
         <p className="text-lg text-gray-600 mt-3">
-          Explore a wide range of scholarships tailored to your academic profile and financial needs.
+          Explore a wide range of scholarships and funding for your academic needs.
         </p>
       </div>
 
       <div className="flex mt-8 w-full max-w-3xl relative">
         <input
           type="text"
-          placeholder="Enter your program, school, or scholarship name"
+          placeholder="Enter program, school, or scholarship name"
           className="w-full p-4 text-lg rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 pr-32"
         />
 
         <button className="absolute right-1 top-1 bottom-1 bg-green-500 text-white px-6 py-3 text-lg font-semibold rounded-full hover:bg-green-600 transition">
           Find Scholarships        
         </button>
+        
       </div>
 
-      <div className="mt-10 w-full max-w-6xl px-4">
+      <div className="mt-10 w-full max-w-6xl px-4 max-sm:hidden">
         <img
           src={stabImg}
           alt="Students walking on campus"

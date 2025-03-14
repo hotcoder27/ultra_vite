@@ -2,6 +2,7 @@ import { stablibImg } from "../utils";
 import ServicesPage from "./StudyAbroadDetails";
 import ScholarshipFinder from "./ScholarshipFinder";
 import CGPACalculator from "./CGPACalculato";
+import FreeResources from "./FreeResources";
 
 const StudyAbroadPage = () => {
   return (
@@ -28,6 +29,7 @@ const StudyAbroadPage = () => {
         <ServicesPage />
       </div>
       <ScholarshipFinder />
+      <FreeResources />
     </section>
   );
 };
