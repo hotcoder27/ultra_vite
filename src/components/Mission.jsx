@@ -29,13 +29,13 @@ const missions = [
 
 export default function MissionPage() {
   return (
-    <div className="relative min-h-screen bg-green-500 px-4 py-16 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen bg-white px-4 py-10 sm:px-6 lg:px-8 shadow-md">
       <div className="absolute right-0 top-0 -z-10">
         <div className="h-64 w-64 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
       </div>
 
       <div className="mx-auto max-w-7xl">
-        <h1 className="mb-16 text-4xl font-serif font-medium text-white sm:text-5xl">Our Mission</h1>
+        <h1 className="mb-16 text-4xl font-serif font-medium text-green-500 sm:text-5xl">Our Mission</h1>
 
         <div className="grid gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {missions.map((mission, index) => (
@@ -51,8 +51,8 @@ export default function MissionPage() {
                   className="relative z-10 rounded-lg object-cover w-full aspect-[4/3]"
                 />
               </div>
-              <p className="text-lg text-white">{mission.description}</p>
-              <a href={mission.link} className="text-green-500 bg-white hover:bg-amber-50 font-semibold p-2 rounded-full text-center">
+              <p className="text-lg text-gray-500">{mission.description}</p>
+              <a href={mission.link} className="text-white bg-green-500 hover:bg-green-600 font-semibold p-2 rounded-full text-center">
                 Learn More
               </a>
             </div>

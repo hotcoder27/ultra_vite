@@ -2,7 +2,7 @@ import { stats } from "../constants";
 
 const Stats = () => {
   return (
-    <div className="bg-white py-24 shadow-lg">
+    <div className="bg-white py-24 shadow-lg mt-[-40px]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-3xl max-sm:text-lg font-bold text-green-600 text-center mb-8">
           Experience You Can Rely On
