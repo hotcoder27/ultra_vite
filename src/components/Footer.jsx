@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/*
         <div className="flex flex-col items-center justify-between gap-6 py-8 sm:flex-row">
 
-          {/* Logo */}
           <div className="order-first sm:order-none">
             <img
               src={logo}
@@ -17,7 +17,6 @@ export default function Footer() {
             />
           </div>
 
-          {/* Navigation */}
           <nav className="flex gap-6">
             {navLinks.map((item) => (
               <a key={item.label} href={item.href} className="text-sm cursor-pointer text-gray-600 hover:text-green-500 transition-all">
@@ -25,7 +24,7 @@ export default function Footer() {
               </a>
             ))}
           </nav>
-        </div>
+        </div> */}
 
         <div className="border-t border-gray-200" />
 
