@@ -11,6 +11,7 @@ import Testimonial from './components/Testimonial';
 import ContactForm from './components/Contact';
 import Etutor from './components/Etutor';
 import StudyAbroadPage from './components/StudyAbroadPage';
+import TravelAbroadPage from './components/TravelAbroadPage';
 
 const App = () => {
   return (
@@ -34,7 +35,7 @@ const App = () => {
 
           <Route path="/etutor" element={<Etutor />} />
           <Route path="/business-career" element={<Tutoring />} />
-          <Route path="/travel-abroad" element={<Tutoring />} />
+          <Route path="/travel-abroad" element={<TravelAbroadPage />} />
           <Route path="/study-abroad" element={<StudyAbroadPage />} />
 
         </Routes>

@@ -6,22 +6,28 @@ import FreeResources from "./FreeResources";
 
 const StudyAbroadPage = () => {
   return (
-    <section className="mt-6">
-      <div className="bg-white flex flex-col items-center justify-center px-6 pt-6">
-        <div className="max-w-5xl text-center">
-          <img
-            src={stablibImg}
-            alt="Study Abroad"
-            className="w-full h-80 object-cover rounded-2xl shadow-lg mb-4"
-          />
+    <section className="mt-6 max-sm:mt-18">
+      <div className="bg-white px-6 py-12">
+        <div className="container mx-auto max-w-8xl">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-center">
+            <div className="order-2 md:order-1">
+              <img
+                src={stablibImg}
+                alt="Study Abroad"
+                className="w-full h-auto object-cover rounded-2xl shadow-lg"
+              />
+            </div>
 
-          <h1 className="text-4xl font-bold my-4 xl:mt-12 text-green-500">
-            Your Journey to Global Education Starts Here!
-          </h1>
+            {/* Text Column */}
+            <div className="order-1 md:order-2 flex flex-col md:pl-8">
+              <h1 className="text-4xl font-bold mb-4 text-green-500">Your Journey to Global Education Starts Here</h1>
 
-          <p className="text-lg mb-2 text-gray-600">
-            We provide expert guidance for your study abroad aspirations, ensuring a seamless process from application to visa approval.
-          </p>
+              <p className="text-lg text-gray-600">
+                We provide expert guidance for your study abroad aspirations, ensuring a seamless process from application
+                to visa approval.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

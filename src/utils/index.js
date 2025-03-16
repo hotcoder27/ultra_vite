@@ -20,6 +20,8 @@ import stab from "/assets/images/stab.jpg";
 import stablib from "/assets/images/stablib.jpg";
 import livestab from "/assets/images/livestab.jpg";
 import inter from "/assets/images/inter.jpg";
+import eb1a from "/assets/images/eb1a.jpg";
+import eb2 from "/assets/images/eb2.jpg";
 
 
 export const logo = logo_1
@@ -44,3 +46,5 @@ export const stabImg = stab
 export const stablibImg = stablib
 export const livestabImg = livestab
 export const interImg = inter
+export const eb1aImg = eb1a
+export const eb2niwImg = eb2
