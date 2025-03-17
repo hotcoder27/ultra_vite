@@ -12,6 +12,7 @@ import ContactForm from './components/Contact';
 import Etutor from './components/Etutor';
 import StudyAbroadPage from './components/StudyAbroadPage';
 import TravelAbroadPage from './components/TravelAbroadPage';
+import BusinessHero from './components/BusinessCareer';
 
 const App = () => {
   return (
@@ -19,7 +20,6 @@ const App = () => {
       <main>
         <Navbar />
         <Routes>
-
           <Route path="/" element={
             <>
               <Hero />
@@ -32,12 +32,10 @@ const App = () => {
               <ContactForm />
             </>
           } />
-
           <Route path="/etutor" element={<Etutor />} />
-          <Route path="/business-career" element={<Tutoring />} />
+          <Route path="/business-career" element={<BusinessHero />} />
           <Route path="/travel-abroad" element={<TravelAbroadPage />} />
           <Route path="/study-abroad" element={<StudyAbroadPage />} />
-
         </Routes>
         <Footer />
       </main>
