@@ -46,21 +46,19 @@ const Hero = () => {
               Your all-in-one platform for educational advancement - We empower people at every stage of their
               educational journey.
             </p>
-        
-
-            <div className="flex space-x-2 pt-4">
-              {links.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => {
-                    setCurrentImageIndex(index)
-                    setCurrentImageKey(links[index].label)
-                  }}
-                  className={`w-3 h-3 rounded-full ${currentImageIndex === index ? "bg-green-500" : "bg-white/50"}`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
+              <div className="flex space-x-2 pt-4">
+                {links.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      setCurrentImageIndex(index)
+                      setCurrentImageKey(links[index].label)
+                    }}
+                    className={`w-3 h-3 rounded-full ${currentImageIndex === index ? "bg-green-500" : "bg-white/50"}`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
           </div>
         </div>
       </div>
