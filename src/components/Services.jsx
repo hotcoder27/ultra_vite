@@ -5,6 +5,22 @@ import { learntyImg, learnxyImg, learn } from "../utils"; // Import images
 
 const services = [
   {
+    id: "travel-abroad",
+    title: "Travel Abroad Consulting",
+    description: "Assistance with visa applications, travel planning, and USA Permanent Resident Services (EB1/EB2 NIW).",
+    image: learn,
+    url: "#"
+  },
+
+  {
+    id: "study-abroad",
+    title: "Study Abroad Consulting",
+    description: "Overseas admission application, Right Through Program (RTP), and students visa application support.",
+    image: learntyImg,
+    url: "#"
+  },
+
+  {
     id: "online-tutoring-basic",
     title: "Basic (Grade 1-JSS 3)",
     description: "Foundational tutoring in core subjects such as Mathematics, English, and Science.",
@@ -43,23 +59,6 @@ const services = [
     image: learnxyImg,
     url: "#"
   },
-
-  {
-    id: "travel-abroad",
-    title: "Travel Abroad Consulting",
-    description: "Assistance with visa applications, travel planning, and USA Permanent Resident Services (EB1/EB2 NIW).",
-    image: learn,
-    url: "#"
-  },
-
-  {
-    id: "study-abroad",
-    title: "Study Abroad Consulting",
-    description: "Overseas admission application, Right Through Program (RTP), and students visa application support.",
-    image: learntyImg,
-    url: "#"
-  }
-
 ];
 
 export default function Services() {
