@@ -42,29 +42,11 @@ const Hero = () => {
             <h1 className="text-4xl font-bold md:text-5xl text-white lg:text-6xl tracking-tight leading-tight">
               Learn. Connect. Explore. Grow.
             </h1>
-            <p className="text-lg text-white/80">
+            <p className="text-lg text-green-500">
               Your all-in-one platform for educational advancement - We empower people at every stage of their
               educational journey.
             </p>
-            <p className="text-lg text-green-400 font-medium">Partner with Us. Explore Your Options</p>
-
-            <div className="flex items-center flex-wrap gap-2">
-              {links.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  onMouseEnter={() => setCurrentImageKey(link.label)}
-                  className={`inline-flex h-11 px-5 items-center justify-center shadow-sm text-sm font-medium transition-all rounded-md
-                    ${
-                      currentImageKey === link.label
-                        ? "bg-green-600 text-white border-2 border-green-500"
-                        : "text-white hover:bg-green-600 hover:text-white border-2 border-green-500/70"
-                    }`}
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
+        
 
             <div className="flex space-x-2 pt-4">
               {links.map((_, index) => (
