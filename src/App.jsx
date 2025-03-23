@@ -23,9 +23,9 @@ const App = () => {
           <Route path="/" element={
             <>
               <Hero />
-              <Mission />
               <Stats />
               <Services />
+              <Mission />
               <Tutoring />
               <HireInstructors />
               <Testimonial />

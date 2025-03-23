@@ -96,13 +96,15 @@ const Navbar = () => {
           )}
         </div>
         <div className="max-md:hidden">
-          <button
-            className="inline-flex h-11 items-center justify-center cursor-pointer
-               bg-green-500 px-10 py-6 rounded-full text-sm font-medium text-white hover:bg-green-600
-               transition-all"
-          >
-            Get Started
-          </button>
+          <a href="#contact">
+            <button
+              className="inline-flex h-11 items-center justify-center cursor-pointer
+                bg-green-500 px-10 py-6 rounded-full text-sm font-medium text-white hover:bg-green-600
+                transition-all"
+            >
+              Get Started
+            </button>
+          </a>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu}>
@@ -138,9 +140,11 @@ const Navbar = () => {
               </a>
             ),
           )}
-          <button className="bg-white text-green-500 border-4 border-green-500 px-4 py-2 rounded-md">
-            Get Started
-          </button>
+          <a href="#contact">
+            <button className="bg-white text-green-500 border-4 border-green-500 px-4 py-2 rounded-md">
+              Get Started
+            </button>
+          </a>
         </div>
       )}
     </div>

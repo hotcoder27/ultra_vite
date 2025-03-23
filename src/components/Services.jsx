@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, X } from "lucide-react";
-import { learntyImg, learnxyImg, learn } from "../utils"; // Import images
+import { learntyImg, learnxyImg, learn } from "../utils";
 
 const services = [
   {
@@ -9,7 +9,7 @@ const services = [
     title: "Travel Abroad Consulting",
     description: "Assistance with visa applications, travel planning, and USA Permanent Resident Services (EB1/EB2 NIW).",
     image: learn,
-    url: "#"
+    url: "/travel-abroad"
   },
 
   {
@@ -17,7 +17,7 @@ const services = [
     title: "Study Abroad Consulting",
     description: "Overseas admission application, Right Through Program (RTP), and students visa application support.",
     image: learntyImg,
-    url: "#"
+    url: "/study-abroad"
   },
 
   {
@@ -25,7 +25,7 @@ const services = [
     title: "Basic (Grade 1-JSS 3)",
     description: "Foundational tutoring in core subjects such as Mathematics, English, and Science.",
     image: learntyImg,
-    url: "#"
+    url: "/etutor"
   },
 
   {
@@ -33,7 +33,7 @@ const services = [
     title: "Senior Secondary (SS1-SS3)",
     description: "Advanced tutoring in subjects aligned with national and international curricula.",
     image: learnxyImg,
-    url: "#"
+    url: "/etutor"
   },
 
   {
@@ -41,7 +41,7 @@ const services = [
     title: "K-12 (SAT, WAEC/NECO, UTME, IELTS)",
     description: "Comprehensive preparation for standardized tests and national exams.",
     image: learn,
-    url: "#"
+    url: "/etutor"
   },
 
   {
@@ -49,7 +49,7 @@ const services = [
     title: "Graduate & Beyond (GRE, GMAT, TOEFL, IELTS)",
     description: "Specialized coaching for graduate-level exams to equip students for international opportunities.",
     image: learntyImg,
-    url: "#"
+    url: "/etutor"
   },
 
   {
@@ -57,7 +57,7 @@ const services = [
     title: "Business & Enterprise Training & Consulting",
     description: "Talent recruitment, corporate training, consulting services, and software solutions development.",
     image: learnxyImg,
-    url: "#"
+    url: "/etutor"
   },
 ];
 
