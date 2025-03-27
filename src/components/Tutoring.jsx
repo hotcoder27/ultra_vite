@@ -1,4 +1,4 @@
-import { learnxyImg } from '../utils';
+import { closeupImg } from '../utils';
 import { features } from '../constants';
 
 export default function Tutoring() {
@@ -11,7 +11,7 @@ export default function Tutoring() {
             Every Learner, Every Stage
           </p>
           <img
-            src={learnxyImg}
+            src={closeupImg}
             alt="Learning Illustration"
             className="mx-auto mt-6 rounded-lg shadow-lg"
             style={{ maxWidth: '100%', height: 'auto' }}
@@ -35,9 +35,11 @@ export default function Tutoring() {
             ))}
           </dl>
           <div className="mt-10 flex justify-center">
-            <button className="bg-green-500 text-white px-8 py-5 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
-              Get Started
-            </button>
+            <a href="#contact">
+              <button className="bg-green-500 cursor-pointer text-white px-8 py-5 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
+                Get Started
+              </button>
+            </a>
           </div>
         </div>
       </div>

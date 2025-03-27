@@ -1,28 +1,28 @@
-import { learntyImg, ultraImg, sureusImg, meetImg } from "../utils";
+import { learntopviewImg, studyictImg, visausaImg, businessmainImg } from "../utils";
 
 const missions = [
   {
     title: "Travel Abroad",
     description: "Assisting with USA permanent resident services, visa applications, travel planning, and accommodation arrangements for international travel.",
-    image: sureusImg,
+    image: visausaImg,
     link: "/travel-abroad",
   },
   {
     title: "Study Abroad",
     description: "Supporting students with overseas admission applications, visa application support, and guidance through programs like the Right Through Program (RTP).",
-    image: ultraImg,
+    image: studyictImg,
     link: "/study-abroad",
   },
   {
     title: "Online Tutoring and Test Prep",
     description: "Offering foundational and advanced tutoring across all educational levels, including preparation for standardized tests and graduate-level exams.",
-    image: learntyImg,
+    image: learntopviewImg,
     link: "/tutoring",
   },
   {
     title: "Business & Career",
     description: "Providing talent recruitment, corporate training, consulting services, and customized software solutions to enhance business growth and efficiency.",
-    image: meetImg,
+    image: businessmainImg,
     link: "/business-career",
   },
 ];

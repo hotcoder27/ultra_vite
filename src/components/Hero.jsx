@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { surelearnImg, sureImg, workImg, learntyImg } from "../utils"
+import { relocationImg, studygroupImg, businessopenImg, rlpImg } from "../utils"
 import { links } from "../constants"
 
 const Hero = () => {
@@ -7,10 +7,10 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const linkImages = {
-    "Travel Abroad": sureImg,
-    "Study Abroad": surelearnImg,
-    "Business & Career": workImg,
-    "Online Tutoring and Test Prep": learntyImg,
+    "Travel Abroad": relocationImg,
+    "Study Abroad": studygroupImg,
+    "Business & Career": businessopenImg,
+    "Online Tutoring and Test Prep": rlpImg,
   }
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="relative w-full h-screen">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img
-            src={linkImages[currentImageKey] || learntyImg}
+            src={linkImages[currentImageKey] || rlpImg}
             alt={currentImageKey}
             className="object-cover w-full h-full transition-all duration-1000 ease-in-out"
           />
